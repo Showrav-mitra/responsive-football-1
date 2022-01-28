@@ -52,12 +52,12 @@ h1{
     box-shadow: 5px 10px 18px #888888;
 }
 .player-info img{
-    width: 450px;
-    height: 300px;    
+    width: 100%;
+     
 }
 .player-info{
     margin-top: 20px;
-    margin-left: 20px;
+    margin-left: 10px;
     margin-right: 10px;
 }
 h3{
@@ -88,13 +88,15 @@ h2{
 }
 
 
+
+
+
 .footer-main{
     padding-left: 300px;
     padding-right: 300px;
 }
 .footer-main img{
     width: 480px;
-    height: 110px;
     margin-left: 380px;
 }
 .footer-main-logo{
@@ -105,8 +107,96 @@ h2{
     display: flex;
     justify-content: space-between;
 }
+.logo-style{
+    font-size: 30px;
+ }
 .footer-main p{
     color: black;
     margin-left: 430px;
     font-size: 35px;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width:688px){
+    /* header start */
+    .demo, .adv-demo{
+        flex-direction: column;
+        padding-left: 0px;
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+    }
+    .demo{
+        margin-bottom: 20px;
+    }
+    h1{
+        font-size: 25px;
+        color: #FFFFFF;
+        text-align: center;
+    }
+    .btn{
+        padding: 5px 5px;
+    }
+    .live-logo img{
+        width: 100%;
+        height: 50%;
+        margin-right: 0px;
+    }
+    .live p{
+        text-align: center;
+    }
+    /* header end */
+
+     .container{
+        grid-template-columns: repeat(1, 1fr);
+        padding-top: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .adv-demo{
+        display: flex;
+        justify-content: space-between;
+        padding: 0px;
+    }
+    h2{
+        font-size: 20px;
+    }
+
+
+
+    .footer-main{
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px;
+    }
+    .footer-img{
+        display: flex;
+        justify-content: center;
+    }
+    .footer-main img{
+        width: 75%;
+        margin: 0px;
+    }
+    .footer-main-logo{
+        justify-content: space-evenly;
+        padding-top: 20px;
+        margin: 0px;  
+    }
+    .logo-style{
+        font-size: 20px;
+     }
+    .footer-main p{
+        margin: 0px;
+        padding-top: 15px;
+        font-size: 15px;
+        text-align: center;
+    }
+     
+
 }
