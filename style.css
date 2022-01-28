@@ -88,8 +88,25 @@ h2{
 }
 
 
-
+.footer-main{
+    padding-left: 300px;
+    padding-right: 300px;
+}
 .footer-main img{
     width: 480px;
     height: 110px;
+    margin-left: 380px;
+}
+.footer-main-logo{
+    padding-top: 20px;
+    margin-left: 450px;
+    margin-right: 450px;
+    margin-top: 20px;   
+    display: flex;
+    justify-content: space-between;
+}
+.footer-main p{
+    color: black;
+    margin-left: 430px;
+    font-size: 35px;
 }
