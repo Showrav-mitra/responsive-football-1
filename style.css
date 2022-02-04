@@ -6,6 +6,36 @@ body{
 
 /* header */
 
+
+/* nav style */
+.nav-container{
+    padding: 0 10%;
+    background-color: #2D25A0;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.brand {
+    padding-top: 5%;
+    text-align: end;
+}
+.menu{
+    
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.menu a{
+    font-size: 25px;
+    font-weight: 400;
+    margin-right: 30px;
+    text-decoration: none;
+    color: white;
+}
+
+
+/* nav style end */
+
+
 .demo{
     background-color:  #2D25A0;
     display: flex;
@@ -129,7 +159,29 @@ h2{
 
 
 @media only screen and (max-width:688px){
+  
     /* header start */
+
+  
+    /* nav style */
+    .nav-container{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .menu{
+        display: none;
+    }
+    .brand{
+        text-align: center;
+    }
+    .brand p{
+        padding-bottom: 0;
+    }
+    
+    /* nav style end */
+
     .demo, .adv-demo{
         flex-direction: column;
         padding-left: 0px;
